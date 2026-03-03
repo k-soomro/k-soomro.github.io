@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an Associate Professor of Artificial Intelligence, with a special interest in Smart Cities, Large Language Models and Qualitative Analysis. I have always found it a bit tricky to keep a schedule and stick to habits. I have always enjoyed learning new things, but I have always struggled with taking notes.\nI have been following productivity trends for a while and have always wanted to incorporate them into my personal and professional life, but it has not quite worked out. Recently, I have started to understand that it is because of different reasons.\nFor example, the difficulty of taking notes, processing them and managing them. This is something I have always found hard to get into.\nRecently, I have started dictating everything I write. This has been incredibly helpful, as it has reduced the friction involved in typing and writing. This blog is, in some ways, a result of that. It will document my experiments with writing more frequently and more publicly, in an attempt to document my learning process."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Technical Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nFeb 27, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+  }
+]
