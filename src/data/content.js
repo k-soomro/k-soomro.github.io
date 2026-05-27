@@ -252,16 +252,4 @@ export const news = [
     title: "Area Chair at NeurIPS 2026",
     body: "Honoured to be serving as Area Chair at NeurIPS 2026 — one of the premier venues for machine learning and AI research.",
   },
-  {
-    id: 2,
-    date: "January 2024",
-    title: "New Publication in ACM Computing Surveys",
-    body: "Our survey on generative AI for urban citizen participation has been accepted in ACM Computing Surveys.",
-  },
-  {
-    id: 3,
-    date: "September 2023",
-    title: "HEU GREENGAGE Project Underway",
-    body: "Leading software requirements management for the new Horizon Europe GREENGAGE project focusing on green citizen engagement.",
-  },
 ];
