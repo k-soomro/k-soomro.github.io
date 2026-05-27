@@ -36,16 +36,16 @@ export const projects = [
     id: 1,
     name: "HEU GREENGAGE",
     funder: "Horizon Europe",
-    role: "Software Requirements Lead",
+    role: "Co-Investigator",
     description:
       "Leading software requirements management and evaluation in this Horizon Europe project focusing on green citizen engagement in urban environments.",
-    status: "current",
+    status: "past",
   },
   {
     id: 2,
     name: "H2020 CURE",
     funder: "Horizon 2020",
-    role: "Research Investigator",
+    role: "Co-Investigator",
     description:
       "European collaborative project exploring urban resilience and citizen engagement with AI-driven tools.",
     status: "past",
@@ -54,7 +54,7 @@ export const projects = [
     id: 3,
     name: "H2020 Smarticipate",
     funder: "Horizon 2020",
-    role: "Research Investigator",
+    role: "Co-Investigator",
     description: "Smart citizen participation platform for urban planning and governance using digital technologies.",
     status: "past",
   },
@@ -62,7 +62,7 @@ export const projects = [
     id: 4,
     name: "EU FP7 DECUMANUS",
     funder: "EU FP7",
-    role: "Research Investigator",
+    role: "Co-Investigator",
     description:
       "Large-scale urban monitoring and analysis system integrating heterogeneous data streams for city management.",
     status: "past",
@@ -71,7 +71,7 @@ export const projects = [
     id: 5,
     name: "EU FP7 urbanAPI",
     funder: "EU FP7",
-    role: "Research Investigator",
+    role: "Researcher",
     description:
       "Urban analytics platform providing real-time APIs for city data to support participatory decision-making.",
     status: "past",
@@ -80,7 +80,7 @@ export const projects = [
     id: 6,
     name: "EU FP7 neuGRID",
     funder: "EU FP7",
-    role: "Research Investigator",
+    role: "Researcher",
     description:
       "Grid computing infrastructure for large-scale neuroscience data analysis across European research institutions.",
     status: "past",
@@ -89,7 +89,7 @@ export const projects = [
     id: 7,
     name: "British Council Newton",
     funder: "British Council",
-    role: "Principal Investigator",
+    role: "Co-Investigator",
     description:
       "International collaboration with Taylors' University Malaysia under the Newton Institution Links Programme.",
     status: "past",
