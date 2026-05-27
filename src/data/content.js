@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Kamran Soomro",
+  name: "Dr Kamran Soomro",
   initials: "KS",
   title: "Associate Professor of Artificial Intelligence",
   university: "UWE Bristol",
