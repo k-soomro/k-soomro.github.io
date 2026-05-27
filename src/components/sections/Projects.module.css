@@ -1,0 +1,101 @@
+.filterBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--purple-light);
+  color: var(--text-dark);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.filterBtn:hover {
+  background: var(--purple-accent);
+  color: #fff;
+}
+
+.filterActive {
+  background: var(--purple-dark) !important;
+  color: #fff !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--purple-faint);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: box-shadow 0.18s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 60, 0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.projectName {
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+.badge {
+  background: var(--purple-accent);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.funder,
+.role {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--purple-mid);
+}
+
+.separator {
+  color: var(--text-light);
+  font-size: 0.76rem;
+}
+
+.description {
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: var(--text-mid);
+}

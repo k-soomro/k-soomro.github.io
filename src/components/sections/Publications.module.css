@@ -1,0 +1,124 @@
+.note {
+  font-size: 0.84rem;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+}
+
+.filterBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--purple-light);
+  color: var(--text-dark);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.filterBtn:hover {
+  background: var(--purple-accent);
+  color: #fff;
+}
+
+.filterActive {
+  background: var(--purple-dark) !important;
+  color: #fff !important;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.entry {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.yearBadge {
+  width: 44px;
+  height: 44px;
+  background: var(--purple-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--purple-dark);
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 0.91rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.authors {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  margin-bottom: 0.4rem;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.venue {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  font-style: italic;
+}
+
+.typeTag {
+  font-size: 0.67rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.journal {
+  background: var(--purple-light);
+  color: var(--purple-dark);
+}
+
+.conference {
+  background: #e8f0fe;
+  color: #1a3a7c;
+}
+
+.workshop {
+  background: #fef3e2;
+  color: #7a4a00;
+}

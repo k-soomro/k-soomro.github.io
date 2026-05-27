@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --purple-dark:   oklch(0.20 0.10 288);
+  --purple-mid:    oklch(0.36 0.12 288);
+  --purple-accent: oklch(0.55 0.18 288);
+  --purple-light:  oklch(0.93 0.032 288);
+  --purple-faint:  oklch(0.976 0.013 288);
+  --text-dark:     oklch(0.16 0.018 288);
+  --text-mid:      oklch(0.44 0.016 288);
+  --text-light:    oklch(0.62 0.012 288);
+  --surface:       #ffffff;
+  --border:        oklch(0.905 0.020 288);
+  --sidebar-width: 300px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: var(--surface);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple-accent);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Scroll reveal */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#root {
+  min-height: 100vh;
+}

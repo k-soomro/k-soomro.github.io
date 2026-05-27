@@ -1,0 +1,58 @@
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoCard {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  background: var(--purple-faint);
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  min-width: 55px;
+  flex-shrink: 0;
+}
+
+.value {
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.value:hover {
+  color: var(--purple-accent);
+  text-decoration: underline;
+}
+
+.linkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.linkBtn {
+  background: var(--purple-dark);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  transition: opacity 0.18s ease;
+}
+
+.linkBtn:hover {
+  opacity: 0.82;
+}

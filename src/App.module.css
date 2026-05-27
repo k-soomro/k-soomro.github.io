@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  margin-left: var(--sidebar-width);
+  padding: 4rem 5rem 7rem;
+  max-width: 920px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+    padding: 5rem 1.5rem 4rem;
+    max-width: 100%;
+  }
+}

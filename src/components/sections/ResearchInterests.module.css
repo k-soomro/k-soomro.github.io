@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1.5px solid var(--purple-accent);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--purple-accent);
+  cursor: default;
+  transition: background 0.18s ease, color 0.18s ease;
+  user-select: none;
+}
+
+.tag:hover {
+  background: var(--purple-accent);
+  color: #fff;
+}

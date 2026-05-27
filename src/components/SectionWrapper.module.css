@@ -1,0 +1,33 @@
+.section {
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.first {
+  border-top: none;
+  padding-top: 0;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.75rem;
+}
+
+.line {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: var(--purple-accent);
+  flex-shrink: 0;
+  border-radius: 1px;
+}
+
+.headingText {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--purple-accent);
+}

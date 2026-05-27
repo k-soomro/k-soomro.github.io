@@ -1,0 +1,22 @@
+.bio {
+  font-size: 1rem;
+  line-height: 1.85;
+  max-width: 72ch;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: var(--purple-light);
+  color: var(--purple-dark);
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
