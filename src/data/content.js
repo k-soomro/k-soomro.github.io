@@ -5,7 +5,7 @@ export const profile = {
   university: "UWE Bristol",
   department: "School of Computing and Creative Technologies",
   bioExcerpt: "AI researcher working on citizen participation in smart cities, NLP, and knowledge management.",
-  credentials: ["BSc Computer Science", "PhD Computer Science", "FHEA"],
+  credentials: ["BE Software Engineering", "PhD Computer Science", "FHEA"],
   links: {
     scholar: "#",
     orcid: "#",
@@ -87,7 +87,7 @@ export const projects = [
   },
   {
     id: 7,
-    name: "British Council Newton",
+    name: "British Council Newton Institution Links Programme",
     funder: "British Council",
     role: "Co-Investigator",
     description:
