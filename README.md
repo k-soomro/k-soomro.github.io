@@ -1,35 +1,43 @@
-<<<<<<< HEAD
-## Hi there 👋
+# Academic CV Website
 
-<!--
-**k-soomro/k-soomro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+React + Vite single-page app for GitHub Pages.
 
-Here are some ideas to get you started:
+## Local development
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-=======
-# React + Vite
+```bash
+npm install
+npm run dev
+```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Open http://localhost:5173.
 
-Currently, two official plugins are available:
+## Production build
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm run build
+```
 
-## React Compiler
+Output goes to `docs/`. Commit the `docs/` folder along with the source and push to GitHub.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## GitHub Pages deployment
 
-## Expanding the ESLint configuration
+1. Push the repo to GitHub.
+2. Go to **Settings → Pages**.
+3. Set **Source** to `Deploy from a branch`, branch `main`, folder `/docs`.
+4. Save. GitHub will serve your site at `https://<username>.github.io/<repo>/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> ffcc40b (First commit)
+### If your site lives at a sub-path
+
+Uncomment and update the `base` option in `vite.config.js`:
+
+```js
+base: '/your-repo-name/',
+```
+
+Then rebuild and push.
+
+## Updating content
+
+All content is in `src/data/content.js`. Edit the exported objects there — no React knowledge needed for text/link changes.
+
+Replace the `#` placeholder URLs in `profile.links` with real links to your Google Scholar, ORCID, LinkedIn, and UWE profile pages.

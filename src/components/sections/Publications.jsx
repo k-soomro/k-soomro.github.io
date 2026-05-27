@@ -3,7 +3,7 @@ import SectionWrapper from '../SectionWrapper';
 import { publications } from '../../data/content';
 import styles from './Publications.module.css';
 
-const FILTERS = ['All', 'Journal', 'Conference', 'Workshop'];
+const FILTERS = ['All', 'Journal', 'Conference', 'Report'];
 
 export default function Publications() {
   const [filter, setFilter] = useState('All');
@@ -14,10 +14,7 @@ export default function Publications() {
   });
 
   return (
-    <SectionWrapper id="publications" title="Selected Publications">
-      <p className={styles.note}>
-        <em>Placeholder entries — replace with actual publications.</em>
-      </p>
+    <SectionWrapper id="publications" title="Publications">
       <div className={styles.filterBar}>
         {FILTERS.map((f) => (
           <button
@@ -41,6 +38,16 @@ export default function Publications() {
                 <span className={`${styles.typeTag} ${styles[pub.type]}`}>
                   {pub.type}
                 </span>
+                {pub.doi && (
+                  <a
+                    href={pub.doi}
+                    className={styles.doiLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    DOI ↗
+                  </a>
+                )}
               </div>
             </div>
           </div>
