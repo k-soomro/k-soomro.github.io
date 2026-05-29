@@ -1,6 +1,5 @@
 export const profile = {
   name: "Dr Kamran Soomro",
-  initials: "KS",
   title: "Associate Professor of Artificial Intelligence",
   university: "UWE Bristol",
   department: "School of Computing and Creative Technologies",
@@ -14,11 +13,20 @@ export const profile = {
   },
 };
 
-export const bio = `I am an Associate Professor of Artificial Intelligence in the School of Computing and Creative Technologies at UWE Bristol. I hold a Bachelors and a PhD in Computer Science and have over 10 years experience in research and academia. My research interests include investigating how artificial intelligence can help transform and enable citizen participation in smart cities and urban management, natural language processing using generative AI, knowledge management and big data. I have also worked as a Data Scientist with the NHS, focusing on projects that improve patient care quality.`;
+export const bio = `I am an Associate Professor of Artificial Intelligence in the School of Computing and Creative Technologies at UWE Bristol. I hold a Bachelor of Engineering in Computer Software Engineering from the National University of Sciences and Technology and a PhD in Computer Science from the University of the West of England. Over the past decade, I have focused on bridging the gap between Data Science and Urban Informatics, leveraging Generative AI and Digital Twins to address complex societal challenges.
+
+My research spans the use of ICT technologies for smart cities and urban management, knowledge management, artificial intelligence, big data, and natural language processing, with a growing focus on Generative AI, deep learning, large language models (LLMs), knowledge engineering, and participatory urban governance.
+
+I have contributed to a number of major research projects, including the EU FP7 neuGRID, urbanAPI, DECUMANUS, H2020 Smarticipate, H2020 CURE, and HEU GREENGAGE projects. Following the completion of GREENGAGE, I am currently engaged in impact development activities, working with local communities to disseminate the knowledge generated through the project. I have also led machine learning Knowledge Transfer Partnerships (KTPs) and am an active member of the EPSRC Peer Review College.
+
+Alongside my academic work, I have worked as a Data Scientist with the NHS, contributing to projects focused on improving the quality of patient care. I have taught a wide range of courses, including Databases, Web Programming, Principles of Computing, and Web Security, and have supervised approximately 50 undergraduate and postgraduate projects. I currently teach Data Mining and Data Visualisation in Business Intelligence, and I am a Fellow of the Higher Education Academy (FHEA).
+
+Beyond research and teaching, I am involved in the UWE Women's Research Mentoring Scheme and the Elevate Mentoring scheme as a mentor, and will be serving as Area Chair for NeurIPS 2026.`;
 
 export const researchInterests = [
   "Artificial Intelligence",
   "Smart Cities",
+  "Digital Democracy",
   "Citizen Participation",
   "Natural Language Processing",
   "Generative AI",
@@ -26,7 +34,7 @@ export const researchInterests = [
   "Big Data",
   "Distributed Systems",
   "Cloud & Grid Computing",
-  "Urban Management",
+  "Technology Enhanced Urban Planning",
   "Machine Learning",
   "Data Science",
 ];
@@ -199,8 +207,9 @@ export const publications = [
 
 export const teaching = {
   current: [
-    { name: "Data Mining", level: "Level 6 / MSc" },
-    { name: "Data Visualisation in Business Intelligence", level: "Level 6 / MSc" },
+    { name: "Business Intelligence and Data Mining", level: "Level 6 / UG" },
+    { name: "Business Intelligence and Data Visualisation", level: "Level 7 / PG" },
+    { name: "Advanced Specialist Text Study", level: "Level 7 / PG" },
   ],
   past: ["Databases", "Web Programming", "Principles of Computing", "Web Security"],
   supervisions: "Supervised approximately 50 undergraduate and Masters projects.",
@@ -213,27 +222,27 @@ export const leadership = [
     role: "Area Chair",
     org: "NeurIPS 2026",
     detail: "Neural Information Processing Systems",
-    upcoming: true,
+    upcoming: false,
   },
   {
     id: 2,
+    role: "Member",
+    org: "EPSRC Peer Review College",
+    detail: "Engineering and Physical Sciences Research Council",
+    upcoming: false,
+  },
+  {
+    id: 3,
     role: "Mentor",
     org: "UWE WRMS",
     detail: "UWE Women's Research Mentoring Scheme",
     upcoming: false,
   },
   {
-    id: 3,
+    id: 4,
     role: "Mentor",
     org: "Elevate Mentoring",
     detail: "UWE Elevate Mentoring Scheme",
-    upcoming: false,
-  },
-  {
-    id: 4,
-    role: "Member",
-    org: "EPSRC Peer Review College",
-    detail: "Engineering and Physical Sciences Research Council",
     upcoming: false,
   },
   {

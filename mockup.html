@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Mockups</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+
+  :root {
+    --purple-dark:   oklch(0.20 0.10 288);
+    --purple-mid:    oklch(0.36 0.12 288);
+    --purple-accent: oklch(0.55 0.18 288);
+    --purple-light:  oklch(0.93 0.032 288);
+    --purple-faint:  oklch(0.976 0.013 288);
+    --text-dark:     oklch(0.16 0.018 288);
+    --text-mid:      oklch(0.44 0.016 288);
+    --border:        oklch(0.905 0.020 288);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    background: #f0eff5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-mid);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  h1 span.badge {
+    background: var(--purple-accent);
+    color: #fff;
+    padding: 0.15rem 0.55rem;
+    border-radius: 20px;
+    font-size: 0.62rem;
+  }
+
+  /* ── Shared chrome ── */
+  .browser {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    background: #fff;
+  }
+  .browser-bar {
+    background: #e8e8ee;
+    padding: 0.55rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #d4d4dc;
+  }
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .dot.r { background: #ff5f57; }
+  .dot.y { background: #febc2e; }
+  .dot.g { background: #28c840; }
+  .url-bar {
+    flex: 1;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.72rem;
+    color: #666;
+    border: 1px solid #ccc;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    background: var(--purple-dark);
+    color: #fff;
+    width: 200px;
+    min-width: 200px;
+    padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .monogram {
+    width: 38px; height: 38px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 800;
+    margin-bottom: 0.9rem;
+  }
+
+  .s-name { font-size: 0.78rem; font-weight: 800; margin-bottom: 0.15rem; }
+  .s-title { font-size: 0.58rem; opacity: 0.6; line-height: 1.4; margin-bottom: 0.75rem; }
+
+  .s-divider { border-top: 1px solid rgba(255,255,255,0.1); margin: 0.8rem 0; }
+
+  .s-label { font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.4; margin-bottom: 0.5rem; }
+
+  .s-nav { display: flex; flex-direction: column; gap: 0.1rem; }
+  .s-nav-item {
+    display: flex; align-items: center; gap: 0.4rem;
+    font-size: 0.62rem; color: rgba(255,255,255,0.5);
+    padding: 0.28rem 0.45rem; border-radius: 4px;
+  }
+  .s-nav-item.active {
+    color: #fff; font-weight: 700;
+    background: rgba(255,255,255,0.13);
+  }
+  .s-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.25); flex-shrink: 0; }
+  .s-dot.active { background: var(--purple-accent); }
+
+  .s-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.9rem; }
+  .s-chip {
+    background: rgba(255,255,255,0.1); border-radius: 3px;
+    padding: 0.12rem 0.35rem; font-size: 0.5rem; font-weight: 700;
+  }
+  .s-tag {
+    border: 1px solid rgba(255,255,255,0.15); border-radius: 3px;
+    padding: 0.1rem 0.3rem; font-size: 0.5rem; opacity: 0.6;
+  }
+  .s-links { display: flex; flex-wrap: wrap; gap: 0.25rem; padding-top: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.8rem; }
+  .s-link {
+    background: rgba(255,255,255,0.08); border-radius: 20px;
+    padding: 0.18rem 0.5rem; font-size: 0.5rem; font-weight: 600; color: #fff;
+  }
+
+  /* ── Main content ── */
+  .main-content {
+    flex: 1;
+    padding: 1.75rem 2.5rem;
+    overflow: hidden;
+  }
+
+  .section-heading {
+    display: flex; align-items: center; gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .section-line { width: 14px; height: 2px; background: var(--purple-accent); border-radius: 1px; }
+  .section-label { font-size: 0.55rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--purple-accent); }
+
+  .bio-text { font-size: 0.7rem; line-height: 1.8; color: var(--text-dark); max-width: 52ch; margin-bottom: 0.85rem; }
+
+  .credential-chips { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .credential-chip {
+    background: var(--purple-light); color: var(--purple-dark);
+    padding: 0.2rem 0.6rem; border-radius: 20px;
+    font-size: 0.58rem; font-weight: 700;
+  }
+
+  .section-divider { border-top: 1px solid var(--border); margin-bottom: 1.25rem; padding-top: 1.25rem; }
+
+  .tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .interest-tag {
+    padding: 0.3rem 0.7rem; border: 1.5px solid var(--purple-accent);
+    border-radius: 5px; font-size: 0.62rem; font-weight: 500; color: var(--purple-accent);
+  }
+
+  /* ── Option A: Centred page ── */
+  .option-a-screen {
+    background: #e9e8f0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 380px;
+    padding: 0;
+  }
+  .option-a-page {
+    width: 100%;
+    max-width: 840px;
+    display: flex;
+    background: #fff;
+    min-height: 380px;
+  }
+
+  /* ── Option B: Full-width fixed sidebar ── */
+  .option-b-screen {
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    min-height: 380px;
+    position: relative;
+  }
+  .option-b-sidebar {
+    position: sticky;
+    top: 0;
+  }
+  .option-b-main {
+    flex: 1;
+    padding: 1.75rem 3rem 1.75rem 2.5rem;
+    margin-left: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ OPTION A ═══ -->
+<div>
+  <h1>Option A — Centred page <span class="badge">Current</span></h1>
+  <div class="browser">
+    <div class="browser-bar">
+      <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+      <div class="url-bar">kamransoomro.github.io/cv-website</div>
+    </div>
+    <div class="option-a-screen">
+      <div class="option-a-page">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="monogram">KS</div>
+          <div class="s-name">Kamran Soomro</div>
+          <div class="s-title">Associate Professor of Artificial Intelligence · UWE Bristol</div>
+          <div class="s-chips">
+            <span class="s-chip">BSc CS</span>
+            <span class="s-chip">PhD CS</span>
+            <span class="s-chip">FHEA</span>
+          </div>
+          <div class="s-divider"></div>
+          <div class="s-label">Research Areas</div>
+          <div class="s-chips" style="margin-bottom:0.8rem">
+            <span class="s-tag">AI</span>
+            <span class="s-tag">Smart Cities</span>
+            <span class="s-tag">NLP</span>
+            <span class="s-tag">Gen AI</span>
+            <span class="s-tag">Big Data</span>
+          </div>
+          <div class="s-divider"></div>
+          <div class="s-nav">
+            <div class="s-nav-item active"><span class="s-dot active"></span>About</div>
+            <div class="s-nav-item"><span class="s-dot"></span>Research Interests</div>
+            <div class="s-nav-item"><span class="s-dot"></span>Projects</div>
+            <div class="s-nav-item"><span class="s-dot"></span>Publications</div>
+            <div class="s-nav-item"><span class="s-dot"></span>Teaching</div>
+            <div class="s-nav-item"><span class="s-dot"></span>Leadership</div>
+            <div class="s-nav-item"><span class="s-dot"></span>News</div>
+          </div>
+          <div class="s-links">
+            <span class="s-link">Scholar</span>
+            <span class="s-link">ORCID</span>
+            <span class="s-link">LinkedIn</span>
+            <span class="s-link">UWE</span>
+          </div>
+        </div>
+        <!-- Main -->
+        <div class="main-content">
+          <div class="section-heading">
+            <span class="section-line"></span>
+            <span class="section-label">About</span>
+          </div>
+          <p class="bio-text">I am an Associate Professor of Artificial Intelligence in the School of Computing and Creative Technologies at UWE Bristol. I hold a Bachelors and a PhD in Computer Science and have over 10 years experience in research and academia. My research interests include investigating how artificial intelligence can help transform and enable citizen participation in smart cities.</p>
+          <div class="credential-chips">
+            <span class="credential-chip">BSc Computer Science</span>
+            <span class="credential-chip">PhD Computer Science</span>
+            <span class="credential-chip">FHEA</span>
+          </div>
+          <div class="section-divider">
+            <div class="section-heading">
+              <span class="section-line"></span>
+              <span class="section-label">Research Interests</span>
+            </div>
+            <div class="tag-grid">
+              <span class="interest-tag">Artificial Intelligence</span>
+              <span class="interest-tag">Smart Cities</span>
+              <span class="interest-tag">Citizen Participation</span>
+              <span class="interest-tag">NLP</span>
+              <span class="interest-tag">Generative AI</span>
+              <span class="interest-tag">Knowledge Management</span>
+              <span class="interest-tag">Big Data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ OPTION B ═══ -->
+<div>
+  <h1>Option B — Full-width, sidebar pinned to screen edge</h1>
+  <div class="browser">
+    <div class="browser-bar">
+      <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+      <div class="url-bar">kamransoomro.github.io/cv-website</div>
+    </div>
+    <div class="option-b-screen">
+      <!-- Sidebar -->
+      <div class="sidebar option-b-sidebar">
+        <div class="monogram">KS</div>
+        <div class="s-name">Kamran Soomro</div>
+        <div class="s-title">Associate Professor of Artificial Intelligence · UWE Bristol</div>
+        <div class="s-chips">
+          <span class="s-chip">BSc CS</span>
+          <span class="s-chip">PhD CS</span>
+          <span class="s-chip">FHEA</span>
+        </div>
+        <div class="s-divider"></div>
+        <div class="s-label">Research Areas</div>
+        <div class="s-chips" style="margin-bottom:0.8rem">
+          <span class="s-tag">AI</span>
+          <span class="s-tag">Smart Cities</span>
+          <span class="s-tag">NLP</span>
+          <span class="s-tag">Gen AI</span>
+          <span class="s-tag">Big Data</span>
+        </div>
+        <div class="s-divider"></div>
+        <div class="s-nav">
+          <div class="s-nav-item active"><span class="s-dot active"></span>About</div>
+          <div class="s-nav-item"><span class="s-dot"></span>Research Interests</div>
+          <div class="s-nav-item"><span class="s-dot"></span>Projects</div>
+          <div class="s-nav-item"><span class="s-dot"></span>Publications</div>
+          <div class="s-nav-item"><span class="s-dot"></span>Teaching</div>
+          <div class="s-nav-item"><span class="s-dot"></span>Leadership</div>
+          <div class="s-nav-item"><span class="s-dot"></span>News</div>
+        </div>
+        <div class="s-links">
+          <span class="s-link">Scholar</span>
+          <span class="s-link">ORCID</span>
+          <span class="s-link">LinkedIn</span>
+          <span class="s-link">UWE</span>
+        </div>
+      </div>
+      <!-- Main -->
+      <div class="option-b-main">
+        <div class="section-heading">
+          <span class="section-line"></span>
+          <span class="section-label">About</span>
+        </div>
+        <p class="bio-text">I am an Associate Professor of Artificial Intelligence in the School of Computing and Creative Technologies at UWE Bristol. I hold a Bachelors and a PhD in Computer Science and have over 10 years experience in research and academia. My research interests include investigating how artificial intelligence can help transform and enable citizen participation in smart cities.</p>
+        <div class="credential-chips">
+          <span class="credential-chip">BSc Computer Science</span>
+          <span class="credential-chip">PhD Computer Science</span>
+          <span class="credential-chip">FHEA</span>
+        </div>
+        <div class="section-divider">
+          <div class="section-heading">
+            <span class="section-line"></span>
+            <span class="section-label">Research Interests</span>
+          </div>
+          <div class="tag-grid">
+            <span class="interest-tag">Artificial Intelligence</span>
+            <span class="interest-tag">Smart Cities</span>
+            <span class="interest-tag">Citizen Participation</span>
+            <span class="interest-tag">NLP</span>
+            <span class="interest-tag">Generative AI</span>
+            <span class="interest-tag">Knowledge Management</span>
+            <span class="interest-tag">Big Data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
