@@ -1,6 +1,6 @@
-import SectionWrapper from '../SectionWrapper';
-import { teaching } from '../../data/content';
-import styles from './Teaching.module.css';
+import SectionWrapper from "../SectionWrapper";
+import { teaching } from "../../data/content";
+import styles from "./Teaching.module.css";
 
 export default function Teaching() {
   return (
@@ -22,7 +22,9 @@ export default function Teaching() {
           <div className={styles.cardLabel}>Previously Taught</div>
           <ul className={styles.courseList}>
             {teaching.past.map((c) => (
-              <li key={c} className={styles.pastItem}>{c}</li>
+              <li key={c} className={styles.pastItem}>
+                {c}
+              </li>
             ))}
           </ul>
         </div>
@@ -30,7 +32,6 @@ export default function Teaching() {
 
       <div className={styles.notes}>
         <p className={styles.note}>{teaching.supervisions}</p>
-        <p className={styles.note}>{teaching.fellowship}</p>
       </div>
     </SectionWrapper>
   );

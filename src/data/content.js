@@ -6,9 +6,9 @@ export const profile = {
   bioExcerpt: "AI researcher working on citizen participation in smart cities, NLP, and knowledge management.",
   credentials: ["BE Software Engineering", "PhD Computer Science", "FHEA"],
   links: {
-    scholar: "#",
-    orcid: "#",
-    linkedin: "#",
+    scholar: "https://scholar.google.com/citations?hl=en&user=vxWLlqIAAAAJ",
+    orcid: "https://orcid.org/0000-0002-6673-2277",
+    linkedin: "www.linkedin.com/in/kamran-soomro-b3b1266",
     uweProfile: "https://people.uwe.ac.uk/Person/KamranSoomro",
   },
 };
@@ -212,8 +212,7 @@ export const teaching = {
     { name: "Advanced Specialist Text Study", level: "Level 7 / PG" },
   ],
   past: ["Databases", "Web Programming", "Principles of Computing", "Web Security"],
-  supervisions: "Supervised approximately 50 undergraduate and Masters projects.",
-  fellowship: "Fellow of the Higher Education Academy (FHEA).",
+  supervisions: "Extensive experience of supervising undergraduate and postgraduate students.",
 };
 
 export const leadership = [
