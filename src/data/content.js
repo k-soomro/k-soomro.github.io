@@ -13,30 +13,37 @@ export const profile = {
   },
 };
 
-export const bio = `I am an Associate Professor of Artificial Intelligence in the School of Computing and Creative Technologies at UWE Bristol. I hold a Bachelor of Engineering in Computer Software Engineering from the National University of Sciences and Technology and a PhD in Computer Science from the University of the West of England. Over the past decade, I have focused on bridging the gap between Data Science and Urban Informatics, leveraging Generative AI and Digital Twins to address complex societal challenges.
+export const bio = `I am an interdisciplinary researcher and Associate Professor of Artificial Intelligence in the School of Computing and Creative Technologies at UWE Bristol. My work sits at the intersection of computing, urban science, and civic governance, drawing on methods from data science, generative AI, and digital twins to address complex societal challenges. I hold a Bachelor of Engineering in Computer Software Engineering from the National University of Sciences and Technology and a PhD in Computer Science from the University of the West of England. Over the past decade, I have focused on bridging Data Science and Urban Informatics, with a growing emphasis on participatory approaches that bring communities, data, and AI into shared decision-making.
 
-My research spans the use of ICT technologies for smart cities and urban management, knowledge management, artificial intelligence, big data, and natural language processing, with a growing focus on Generative AI, deep learning, large language models (LLMs), knowledge engineering, and participatory urban governance.
+My research is inherently cross-disciplinary, spanning AI, urban informatics, and civic technology. It brings together generative AI, deep learning, and large language models (LLMs) with knowledge engineering, big data, and natural language processing to support smart cities, participatory urban governance, and evidence-informed public decision-making. I am particularly interested in how computational methods — especially digital twins and LLMs — can mediate between technical systems and the communities they serve.
 
-I have contributed to a number of major research projects, including the EU FP7 neuGRID, urbanAPI, DECUMANUS, H2020 Smarticipate, H2020 CURE, and HEU GREENGAGE projects. Following the completion of GREENGAGE, I am currently engaged in impact development activities, working with local communities to disseminate the knowledge generated through the project. I have also led machine learning Knowledge Transfer Partnerships (KTPs) and am an active member of the EPSRC Peer Review College.
+My research portfolio reflects a sustained engagement with EU- and UK-funded projects that cross computational, urban, and social domains, including EU FP7 neuGRID, urbanAPI, and DECUMANUS, H2020 Smarticipate and CURE, and the HEU GREENGAGE project. Following the completion of GREENGAGE, I am currently engaged in impact development activities, working with local communities to disseminate the knowledge generated through the project — a process that extends research beyond academia into civic practice. I have also led machine learning Knowledge Transfer Partnerships (KTPs) bridging industry and academia, and am an active member of the EPSRC Peer Review College.
 
-Alongside my academic work, I have worked as a Data Scientist with the NHS, contributing to projects focused on improving the quality of patient care. I have taught a wide range of courses, including Databases, Web Programming, Principles of Computing, and Web Security, and have supervised approximately 50 undergraduate and postgraduate projects. I currently teach Data Mining and Data Visualisation in Business Intelligence, and I am a Fellow of the Higher Education Academy (FHEA).
+Alongside my academic work, I have worked as a Data Scientist with the NHS, contributing to projects focused on improving the quality of patient care — experience that directly informs my interest in applying AI to public-sector challenges. My teaching similarly cuts across disciplinary boundaries, pairing technical foundations with their application to business, civic, and societal problems. I have taught a wide range of courses, including Databases, Web Programming, Principles of Computing, and Web Security, and have supervised approximately 50 undergraduate and postgraduate projects. I currently teach Data Mining and Data Visualisation in Business Intelligence, and I am a Fellow of the Higher Education Academy (FHEA).
 
-Beyond research and teaching, I am involved in the UWE Women's Research Mentoring Scheme and the Elevate Mentoring scheme as a mentor, and will be serving as Area Chair for NeurIPS 2026.`;
+My engagement extends beyond research and teaching into mentorship, scholarly service, and public-sector practice. I mentor through the UWE Women's Research Mentoring Scheme and the Elevate Mentoring scheme, and I will serve as Area Chair for NeurIPS 2026.`;
 
 export const researchInterests = [
-  "Artificial Intelligence",
-  "Smart Cities",
-  "Digital Democracy",
-  "Citizen Participation",
+  // AI & Computation
+  "Generative AI & Large Language Models",
+  "Deep Learning",
   "Natural Language Processing",
-  "Generative AI",
-  "Knowledge Management",
-  "Big Data",
-  "Distributed Systems",
-  "Cloud & Grid Computing",
-  "Technology Enhanced Urban Planning",
-  "Machine Learning",
+  "Knowledge Engineering & Representation",
+
+  // Data & Urban Science
   "Data Science",
+  "Big Data Analytics",
+  "Digital Twins",
+  "Smart Cities",
+  "Urban Informatics",
+  "Technology-Enhanced Urban Planning",
+  "Distributed & Cloud Computing",
+
+  // Society & Governance
+  "Participatory Urban Governance",
+  "Digital Democracy & Citizen Participation",
+  "Civic Technology",
+  "Knowledge Management",
 ];
 
 export const projects = [
