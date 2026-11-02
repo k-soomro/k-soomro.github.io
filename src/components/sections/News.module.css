@@ -33,3 +33,16 @@
   line-height: 1.6;
   color: var(--text-mid);
 }
+
+.link {
+  display: inline-block;
+  margin-top: 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--purple-accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

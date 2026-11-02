@@ -11,6 +11,16 @@ export default function News() {
             <div className={styles.date}>{item.date}</div>
             <div className={styles.title}>{item.title}</div>
             <p className={styles.body}>{item.body}</p>
+            {item.link && (
+              <a
+                href={item.link}
+                className={styles.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.linkLabel || 'Read more'} ↗
+              </a>
+            )}
           </div>
         ))}
       </div>

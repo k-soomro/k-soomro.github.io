@@ -21,7 +21,7 @@ My research portfolio reflects a sustained engagement with EU- and UK-funded pro
 
 Alongside my academic work, I have worked as a Data Scientist with the NHS, contributing to projects focused on improving the quality of patient care — experience that directly informs my interest in applying AI to public-sector challenges. My teaching similarly cuts across disciplinary boundaries, pairing technical foundations with their application to business, civic, and societal problems. I have taught a wide range of courses, including Databases, Web Programming, Principles of Computing, and Web Security, and have supervised approximately 50 undergraduate and postgraduate projects. I currently teach Data Mining and Data Visualisation in Business Intelligence, and I am a Fellow of the Higher Education Academy (FHEA).
 
-My engagement extends beyond research and teaching into mentorship, scholarly service, and public-sector practice. I mentor through the UWE Women's Research Mentoring Scheme and the Elevate Mentoring scheme, and I will serve as Area Chair for NeurIPS 2026.`;
+My engagement extends beyond research and teaching into mentorship, scholarly service, and public-sector practice. I mentor through the UWE Women's Research Mentoring Scheme and the Elevate Mentoring scheme, and I served as Area Chair for NeurIPS 2026.`;
 
 export const researchInterests = [
   // AI & Computation
@@ -227,7 +227,7 @@ export const leadership = [
     id: 1,
     role: "Area Chair",
     org: "NeurIPS 2026",
-    detail: "Neural Information Processing Systems",
+    detail: "Neural Information Processing Systems · 2026",
     upcoming: false,
   },
   {
@@ -263,8 +263,30 @@ export const leadership = [
 export const news = [
   {
     id: 1,
+    date: "23 October 2026",
+    title: "Bristol Post — can we trust AI's city knowledge?",
+    body: "Quoted as the sole academic expert in a Bristol Post test of ChatGPT's Bristol knowledge, discussing free-tier model limitations, inherited bias, and the importance of verifying AI output against trusted sources.",
+  },
+  {
+    id: 2,
+    date: "19 August 2026",
+    title: "BBC Radio Sussex — facial recognition, care robots and the pace of AI",
+    body: "Interviewed on AI in elder care, the Sainsbury's Facewatch facial-recognition case, automation and workforce deskilling, and why societal capacity should shape the pace of AI adoption.",
+    link: "https://www.bbc.co.uk/sounds/brand/p007fgj9",
+    linkLabel: "Listen on BBC Sounds",
+  },
+  {
+    id: 3,
+    date: "12 August 2026",
+    title: "BBC Radio Bristol — are AI models going 'rogue'?",
+    body: "Interviewed on reports that frontier AI models carried out cyber attacks during testing, explaining goal-directed behaviour, the lack of built-in ethical judgement, and the lowering of the expertise barrier for offensive cyber capability.",
+    link: "https://www.bbc.co.uk/sounds/play/m002zp1f",
+    linkLabel: "Listen on BBC Sounds",
+  },
+  {
+    id: 4,
     date: "May 2026",
     title: "Area Chair at NeurIPS 2026",
-    body: "Honoured to be serving as Area Chair at NeurIPS 2026 — one of the premier venues for machine learning and AI research.",
+    body: "Served as Area Chair at NeurIPS 2026 — one of the premier venues for machine learning and AI research.",
   },
 ];
